@@ -17,3 +17,46 @@ body {
 .footer {
   flex: 0 0 auto;
 }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.slider {
+  height: 1092px;
+  background-image: url(/img/slider-bg.jpg);
+  background-repeat: repeat-x;
+}
+
+.slider_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slider_img {
+  margin: 312px auto auto;
+}
+
+.slider_navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 228px;
+}
+
+.slider_navigation-control {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-color: #81b1b1;
+  box-shadow: 2px 3px 0 rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s;
+}
+
+.slider_navigation-control:hover {
+  background-color: #f27861;
+  transition: background-color 0.3s;
+}
