@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Voltaire&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +8,18 @@ html,
 body {
   height: 100%;
 }
+
+body {
+  font-family: Voltaire, sans-serif;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  background-color: #f27861;
+  background-image: url(/img/Background_dirt-tile.png);
+  background-repeat: repeat;
 }
 .content {
   flex: 1 0 auto;
@@ -21,6 +31,10 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.container__inner {
+  max-width: 953px;
 }
 
 .slider {
@@ -59,4 +73,40 @@ body {
 .slider_navigation-control:hover {
   background-color: #f27861;
   transition: background-color 0.3s;
+}
+
+.about {
+  margin-top: -62px;
+  padding-top: 48px;
+  z-index: 2;
+  background-color: #e2ded4;
+  background-image: url(/img/Background_dirt-tile.png);
+  background-repeat: repeat;
+  border-bottom: 1px solid #000;
+}
+
+.about__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.about__text {
+  width: 552px;
+  margin: 39px auto 55px;
+  text-align: center;
+  color: #564547;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.about__technic-img {
+  display: block;
+  margin: 0 auto 52px;
+}
+
+.block-divider {
+  height: 21px;
+  background-image: url(/img/block-divider-img.png);
+  background-repeat: repeat-x;
 }
