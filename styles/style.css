@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Voltaire&display=swap");
 
+@font-face {
+  font-family: "madisonsquareincised";
+  src: url("/fonts/MADISI__-webfont.woff"), url("/fonts/MADISI__-webfont.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +82,13 @@ body {
   transition: background-color 0.3s;
 }
 
+.nav-about-block {
+  display: flex;
+  justify-content: center;
+}
+
 .about {
+  width: 953px;
   margin-top: -62px;
   padding-top: 48px;
   z-index: 2;
@@ -109,4 +122,134 @@ body {
   height: 21px;
   background-image: url(/img/block-divider-img.png);
   background-repeat: repeat-x;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.logo {
+  width: 98px;
+  height: 98px;
+  background-color: #81b1b1;
+  background-image: url(/img/Background_dirt-tile.png);
+  background-repeat: repeat;
+  box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.51);
+}
+
+.logo_social-links {
+  margin: 21px 0 14px 0;
+}
+
+.logo__text {
+  padding: 24px 16px;
+  color: #564547;
+  font-family: madisonsquareincised, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu_right {
+  justify-content: flex-end;
+}
+
+.menu__item {
+  margin: 10px 0;
+  padding-bottom: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.menu__link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  line-height: 54px;
+  text-decoration: none;
+  width: 100%;
+  color: #564547;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.menu__link_ribbon-right:before {
+  content: "";
+  display: block;
+  width: 20px;
+}
+
+.menu__link_ribbon-left {
+  padding-left: 6px;
+}
+
+.menu__link_ribbon-left:after {
+  content: "";
+  display: block;
+  width: 20px;
+}
+
+.ribbon {
+  display: flex;
+  overflow: hidden;
+  box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.51);
+}
+
+.ribbon__right-head {
+  border-style: solid;
+  border-color: #81b1b1 transparent #81b1b1 transparent;
+  border-width: 27px 0 27px 15px;
+  transition: all 0.3s;
+}
+
+.ribbon__left-head {
+  border-style: solid;
+  border-color: #81b1b1 transparent #81b1b1 transparent;
+  border-width: 27px 15px 27px 0;
+  transition: all 0.3s;
+}
+
+.ribbon__body {
+  width: 65px;
+  height: 54px;
+  background-color: #81b1b1;
+  background-image: url(/img/Background_dirt-tile.png);
+  transition: all 0.3s;
+}
+
+.ribbon:hover > .ribbon__body {
+  background-color: #e2ded4;
+  transition: all 0.3s;
+}
+
+.ribbon:hover > .ribbon__right-head,
+.ribbon:hover > .ribbon__left-head {
+  border-color: #e2ded4 transparent #e2ded4 transparent;
+  transition: all 0.3s;
+}
+
+.ribbon_stretched:hover > .ribbon__body {
+  width: 83px;
+  transition: all 0.3s;
+}
+
+.ribbon_static > .ribbon__body {
+  width: 83px;
+}
+
+.site-navigation {
+  margin-top: 11px;
 }
