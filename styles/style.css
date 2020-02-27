@@ -2,7 +2,8 @@
 
 @font-face {
   font-family: "madisonsquareincised";
-  src: url("/fonts/MADISI__-webfont.woff"), url("/fonts/MADISI__-webfont.woff2");
+  src: url("../fonts/MADISI__-webfont.woff"),
+    url("../fonts/MADISI__-webfont.woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -25,7 +26,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   background-color: #f27861;
-  background-image: url(/img/Background_dirt-tile.png);
+  background-image: url(../img/Background_dirt-tile.png);
   background-repeat: repeat;
 }
 .content {
@@ -46,7 +47,7 @@ body {
 
 .slider {
   height: 1092px;
-  background-image: url(/img/slider-bg.jpg);
+  background-image: url(../img/slider-bg.jpg);
   background-repeat: repeat-x;
 }
 
@@ -93,7 +94,7 @@ body {
   padding-top: 48px;
   z-index: 2;
   background-color: #e2ded4;
-  background-image: url(/img/Background_dirt-tile.png);
+  background-image: url(../img/Background_dirt-tile.png);
   background-repeat: repeat;
   border-bottom: 1px solid #000;
 }
@@ -120,7 +121,7 @@ body {
 
 .block-divider {
   height: 21px;
-  background-image: url(/img/block-divider-img.png);
+  background-image: url(../img/block-divider-img.png);
   background-repeat: repeat-x;
 }
 
@@ -134,7 +135,7 @@ body {
   width: 98px;
   height: 98px;
   background-color: #81b1b1;
-  background-image: url(/img/Background_dirt-tile.png);
+  background-image: url(../img/Background_dirt-tile.png);
   background-repeat: repeat;
   box-shadow: 3px 4px 0 rgba(0, 0, 0, 0.51);
 }
@@ -226,7 +227,7 @@ body {
   width: 65px;
   height: 54px;
   background-color: #81b1b1;
-  background-image: url(/img/Background_dirt-tile.png);
+  background-image: url(../img/Background_dirt-tile.png);
   transition: all 0.3s;
 }
 
